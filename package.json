@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node src/index.js",
-    "dev": "ts-node src/index.js"
+    "dev": "tsx watch src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,14 +16,15 @@
   },
   "homepage": "https://github.com/TheBalthazar19/movies#readme",
   "description": "",
-  "type": "module",
+  "type": "module" ,
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.4"
+  },
   "devDependencies": {
     "@types/node": "^22.13.10",
     "ts-node": "^10.9.2",
-    "tsx": "^4.7.1",
-    "typescript": "^5.8.2"
-  },
-  "dependencies": {
-    "@hono/node-server": "^1.13.8"
+    "typescript": "^5.8.2",
+    "tsx": "^4.7.1"
   }
 }
